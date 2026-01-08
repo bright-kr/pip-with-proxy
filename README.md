@@ -1,6 +1,6 @@
 # pip에서 プロキシ 사용하기
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
 
 이 가이드는 pip에서 プロキ시를 설정하여 제한을 우회하고, 보안을 강화하며, 패키지 관리를 간소화하는 방법을 설명합니다:
 
@@ -42,7 +42,7 @@ pip에서 プロ키시를 사용하기 전에, プロ키시에 대한 관련 정
 
 `proxy-list` repo 내에서, 동작하는 Public プロ키시를 찾기 위해 [`proxy-list-status.txt`](https://github.com/clarketm/proxy-list/blob/master/proxy-list-status.txt) 파일을 확인하십시오. 옆에 `success` 플래그가 표시된 주소를 찾으면 되며, 이는 해당 주소가 동작 중임을 의미합니다:
 
-![Selecting a public proxy](https://github.com/luminati-io/pip-with-proxy/blob/main/Images/Selecting-a-public-proxy.png)
+![Selecting a public proxy](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Selecting-a-public-proxy.png)
 
 이 튜토리얼에서는 Public プロ키시 주소로 `45.185.162.203:999` 를 사용합니다. 이는 プロ키시 서버 주소가 `http://45.185.162.203:999` 임을 의미합니다.
 
@@ -277,17 +277,17 @@ Bright Data는 レジデンシャル, データセンタープロキ시, モバ�
 
 사이드 메뉴에서 **Proxies & Scraping**을 클릭하십시오:
 
-![Bright Data proxies](https://github.com/luminati-io/pip-with-proxy/blob/main/Images/Bright-Data-proxies-2048x1041.png)
+![Bright Data proxies](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Bright-Data-proxies-2048x1041.png)
 
 폼이 로드되면, 새 residential proxy를 설정하십시오. 기본 설정을 사용하면 여러 Bright Data 사용자가 사용하는 공유 IPアドレス가 할당됩니다.
 
-![Creating a residential proxy](https://github.com/luminati-io/pip-with-proxy/blob/main/Images/Creating-a-residential-proxy-2048x1040.png)
+![Creating a residential proxy](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Creating-a-residential-proxy-2048x1040.png)
 
 특정 지역의 IPアドレス가 필요하다면, 설정 중 원하는 국가를 선택할 수 있습니다.
 
 プロ키시가 생성되면, エンドポイント 및 인증 세부 정보가 표시되는 대시보드로 리디렉션됩니다. 사용자 이름, 비밀번호, 서버 주소를 반드시 기록해 두십시오.
 
-![Proxy dashboard](https://github.com/luminati-io/pip-with-proxy/blob/main/Images/Proxy-dashboard-2048x1040.png)
+![Proxy dashboard](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Proxy-dashboard-2048x1040.png)
 
 `--proxy` 플래그를 사용하여 エンドポイント 값의 가용성을 테스트하십시오:
 
