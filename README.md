@@ -1,4 +1,4 @@
-# pip에서 プロキシ 사용하기
+# pip에서 프록시 사용하기
 
 [![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
 
@@ -21,13 +21,13 @@
 
 ### Public Proxies
 
-Public プロキ시는 누구나 접근할 수 있으며 일반적으로 인증이 필요하지 않습니다. 대체 IPアドレス를 사용하는 빠른 방법을 제공하지만, 속도가 느리고 연결이 불안정하며 IP 차단 위험이 더 높은 등 눈에 띄는 단점이 있습니다. 무료로 널리 제공되는 경우가 많아 プロキ시 로테이션, 캐싱, 접근 제어와 같은 핵심 기능이 부족한 경우가 많으며, 그로 인해 프로덕션 환경에서 신뢰성 있게 사용하기에는 부적합합니다.
+Public プロキ시는 누구나 접근할 수 있으며 일반적으로 인증이 필요하지 않습니다. 대체 IP 주소를 사용하는 빠른 방법을 제공하지만, 속도가 느리고 연결이 불안정하며 IP 차단 위험이 더 높은 등 눈에 띄는 단점이 있습니다. 무료로 널리 제공되는 경우가 많아 プロキ시 로테이션, 캐싱, 접근 제어와 같은 핵심 기능이 부족한 경우가 많으며, 그로 인해 프로덕션 환경에서 신뢰성 있게 사용하기에는 부적합합니다.
 
 Public URL은 다음과 같은 형식일 수 있습니다: `https://proxyserver:port`.
 
 ### Private Proxies
 
-[Private プロキ시](https://brightdata.co.kr/solutions/private-proxies)는 인증이 필요하며, 더 강화된 보안, 안정성, 고급 기능을 제공하지만 보통 비용이 발생합니다. 빠르고 신뢰할 수 있는 연결로 [전용 IPアドレス](https://brightdata.co.kr/solutions/dedicated-proxies)에 접근할 수 있으며, 성능과 제어를 개선하기 위한 プロキ시 인증 및 로테이션 같은 기능을 포함합니다.
+[Private プロキ시](https://brightdata.co.kr/solutions/private-proxies)는 인증이 필요하며, 더 강화된 보안, 안정성, 고급 기능을 제공하지만 보통 비용이 발생합니다. 빠르고 신뢰할 수 있는 연결로 [전용 IP 주소](https://brightdata.co.kr/solutions/dedicated-proxies)에 접근할 수 있으며, 성능과 제어를 개선하기 위한 プロキ시 인증 및 로테이션 같은 기능을 포함합니다.
 
 접근은 일반적으로 인증으로 제어되며, 종종 사용자 이름과 비밀번호를 プロキ시 URL의 접두사로 포함하는 방식으로 구성됩니다. 예: `https://username:password@proxyserver:port`.
 
@@ -57,7 +57,7 @@ Public プロ키시를 통한 접근을 확인하고 패키지 가져오기를 �
 pip install boto3 --proxy http://45.185.162.203:999
 ```
 
-이 접근 방식은 プロ키시를 영구적으로 설정하기 전에 빠르게 테스트하고 검증하는 데 유용합니다. pip 패키지를 배포하는 경우에도, 다른 IPアドレス에서의 가용성을 확인하는 데 도움이 됩니다.
+이 접근 방식은 プロ키시를 영구적으로 설정하기 전에 빠르게 테스트하고 검증하는 데 유용합니다. pip 패키지를 배포하는 경우에도, 다른 IP 주소에서의 가용성을 확인하는 데 도움이 됩니다.
 
 ## Configuring a pip Proxy with the pip Config File
 
@@ -110,7 +110,7 @@ proxy = http://45.185.162.203:999
 
 ## Configuring a pip Proxy with Environment Variables
 
-시스템 environment variables를 구성하면 pip 및 시스템의 다른 모든 HTTP リクエスト에 대해 プロ키시가 사용되도록 보장합니다. 이는 `HTTP_PROXY` 및 `HTTPS_PROXY` 변수를 설정하여 달성되며, pip를 포함한 많은 애플리케이션이 HTTP リクエスト를 처리하기 위한 시스템 기본 プロ키시로 이를 사용합니다.
+시스템 environment variables를 구성하면 pip 및 시스템의 다른 모든 HTTP 요청에 대해 プロ키시가 사용되도록 보장합니다. 이는 `HTTP_PROXY` 및 `HTTPS_PROXY` 변수를 설정하여 달성되며, pip를 포함한 많은 애플리케이션이 HTTP 요청를 처리하기 위한 시스템 기본 プロ키시로 이를 사용합니다.
 
 ### Linux/macOS
 
@@ -192,7 +192,7 @@ Private プロ키시 서버가 자체 서명 인증서를 사용하는 경우, �
 
 ## Using pip with Rotating Proxies
 
-[ローテーティングプロキ시](https://brightdata.co.kr/solutions/rotating-proxies)는 각 リクエスト마다 IPアドレス를 자동으로 전환하여 IP 차단을 피하는 데 도움이 됩니다. 이는 여러 사용자를 모방하고 제한을 우회합니다.
+[ローテーティングプロキ시](https://brightdata.co.kr/solutions/rotating-proxies)는 각 요청마다 IP 주소를 자동으로 전환하여 IP 차단을 피하는 데 도움이 됩니다. 이는 여러 사용자를 모방하고 제한을 우회합니다.
 
 이는 목록에서 プロ키시를 무작위로 선택하는 방식으로 구현할 수 있습니다. 아래는 Public プロ키시를 순환하며 pip 패키지를 설치하는 간단한 bash 스크립트입니다.
 
@@ -259,7 +259,7 @@ Successfully installed pandas-2.2.3 python-dateutil-2.9.0.post0 pytz-2025.1 six-
 
 プロ키시는 개발자가 네트워크 제한을 우회하고, 차단된 리소스에 접근하며, 패키지 다운로드 속도를 최적화할 수 있도록 합니다. Private プロ키시는 신원을 마스킹하여 보안을 강화하는 동시에 캐싱과 더 빠른 연결을 제공합니다.
 
-개인정보 보호를 위해 모든 인터넷 트래픽을 암호화하지만 지연을 유발할 수 있는 [VPNs와 달리](https://brightdata.co.kr/blog/proxy-101/vpn-vs-proxy), プロ키시는 pip リクエスト에 대한 경량 대안으로 동작합니다. VPN의 성능 오버헤드 없이 더 빠르고 효율적으로 의존성을 관리할 수 있는 방법을 제공합니다.
+개인정보 보호를 위해 모든 인터넷 트래픽을 암호화하지만 지연을 유발할 수 있는 [VPNs와 달리](https://brightdata.co.kr/blog/proxy-101/vpn-vs-proxy), プロ키시는 pip 요청에 대한 경량 대안으로 동작합니다. VPN의 성능 오버헤드 없이 더 빠르고 효율적으로 의존성을 관리할 수 있는 방법을 제공합니다.
 
 ## Common Mistakes and Best Practices
 
@@ -271,7 +271,7 @@ pip에서 プロ키시를 사용할 때는 보안 취약점으로 이어질 수 
 
 ## Using Bright Data Proxies
 
-Bright Data는 レジデンシャル, データセンタープロキ시, モバイル 장치를 포함한 다양한 [proxy services](https://brightdata.co.kr/proxy-types)를 제공합니다. 이를 통해 프로젝트 요구에 맞는 プロ키시를 쉽게 생성할 수 있습니다. pip에서 다른 IPアドレス를 통해 패키지에 접근하는 데 사용할 수 있는 Private [residential proxy](https://brightdata.co.kr/proxy-types/residential-proxies)를 생성해 보겠습니다.
+Bright Data는 レジデンシャル, データセンタープロキ시, モバイル 장치를 포함한 다양한 [proxy services](https://brightdata.co.kr/proxy-types)를 제공합니다. 이를 통해 프로젝트 요구에 맞는 プロ키시를 쉽게 생성할 수 있습니다. pip에서 다른 IP 주소를 통해 패키지에 접근하는 데 사용할 수 있는 Private [residential proxy](https://brightdata.co.kr/proxy-types/residential-proxies)를 생성해 보겠습니다.
 
 먼저 무료 Bright Data 계정에 가입하십시오. 그런 다음 [user dashboard](https://brightdata.co.kr/cp/start/)로 이동하십시오.
 
@@ -279,17 +279,17 @@ Bright Data는 レジデンシャル, データセンタープロキ시, モバ�
 
 ![Bright Data proxies](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Bright-Data-proxies-2048x1041.png)
 
-폼이 로드되면, 새 residential proxy를 설정하십시오. 기본 설정을 사용하면 여러 Bright Data 사용자가 사용하는 공유 IPアドレス가 할당됩니다.
+폼이 로드되면, 새 residential proxy를 설정하십시오. 기본 설정을 사용하면 여러 Bright Data 사용자가 사용하는 공유 IP 주소가 할당됩니다.
 
 ![Creating a residential proxy](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Creating-a-residential-proxy-2048x1040.png)
 
-특정 지역의 IPアドレス가 필요하다면, 설정 중 원하는 국가를 선택할 수 있습니다.
+특정 지역의 IP 주소가 필요하다면, 설정 중 원하는 국가를 선택할 수 있습니다.
 
-プロ키시가 생성되면, エンドポイント 및 인증 세부 정보가 표시되는 대시보드로 리디렉션됩니다. 사용자 이름, 비밀번호, 서버 주소를 반드시 기록해 두십시오.
+プロ키시가 생성되면, 엔드포인트 및 인증 세부 정보가 표시되는 대시보드로 리디렉션됩니다. 사용자 이름, 비밀번호, 서버 주소를 반드시 기록해 두십시오.
 
 ![Proxy dashboard](https://github.com/bright-kr/pip-with-proxy/blob/main/Images/Proxy-dashboard-2048x1040.png)
 
-`--proxy` 플래그를 사용하여 エンドポイント 값의 가용성을 테스트하십시오:
+`--proxy` 플래그를 사용하여 엔드포인트 값의 가용성을 테스트하십시오:
 
 ```bash
 $ pip install pandas \
@@ -302,4 +302,4 @@ Bright Data プロ키시는 자체 서명 인증서를 사용하므로, `trusted
 
 ## Conclusion
 
-pip에 대한 プロ키시 구성은 CLI 플래그, pip config file, environment variables 등 여러 옵션으로 간단히 수행할 수 있습니다. 그러나 Public プロ키시는 한계가 있으며 대규모 워크로드나 프로덕션 사용에는 적합하지 않습니다. 더 신뢰할 수 있는 해결책을 위해 Bright Data는 レジデンシャル 및 [datacenter IPs](https://brightdata.co.kr/proxy-types/datacenter-proxies)를 제공하며, 빠르고 안정적인 연결과 Webスクレイピング 및 데이터 수집을 위한 고급 도구를 제공합니다. 무료로 가입하여 시작하십시오.
+pip에 대한 プロ키시 구성은 CLI 플래그, pip config file, environment variables 등 여러 옵션으로 간단히 수행할 수 있습니다. 그러나 Public プロ키시는 한계가 있으며 대규모 워크로드나 프로덕션 사용에는 적합하지 않습니다. 더 신뢰할 수 있는 해결책을 위해 Bright Data는 レジデンシャル 및 [datacenter IPs](https://brightdata.co.kr/proxy-types/datacenter-proxies)를 제공하며, 빠르고 안정적인 연결과 Web스크레이핑 및 데이터 수집을 위한 고급 도구를 제공합니다. 무료로 가입하여 시작하십시오.
